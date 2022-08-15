@@ -1,0 +1,142 @@
+#El programa para tomar ordenes en un lugar de comida rápida
+
+x=str(input("¡Hola, bienvenido a Hamburcat! Vamos a ordenar"))
+print ("Orden 1")
+
+#Declaramos variables
+s1 = "si"
+a1 = ""
+be = ""
+ll = ""
+print("Ingrese cierre cuando quiera ya no tomar ordenes")
+#Ponemos un while para que el programa continue hasta que se ingrese un cierre
+while s1 != "cierre": 
+  #Empezamos a crear la lista de ingredientes y preguntamos si desean un ingrediente o no
+  s = str(input("Ingrese número de orden: "))
+  print ("¡Hola, bienvenido!")
+  print ("Orden",s)
+
+  print ("¿Desea torta de carne?")
+  t = int(input("1: Si, 2. No: "))
+  if t == 1:
+    print ("¿Desea doble torta de carne?")
+    t2 = int(input("1: Si, 2. No: "))
+  elif t == 2: 
+    print ("¿Desea doble torta de carne?")
+    t2 = int(input("1: Si, 2. No: "))
+  else: 
+     print ("Por favor, sólo ingresar 1 o 2")
+  print ("¿Desea tocino?")
+  to = int(input("1: Si, 2. No: "))
+  if to == 1:
+    print ("¿Desea lechuga?")
+    l = int(input("1: Si, 2. No: "))
+  elif to == 2: 
+    print ("¿Desea lechuga?")
+    l = int(input("1: Si, 2. No: "))
+  else: 
+     print ("Por favor, sólo ingresar 1 o 2")
+  print ("¿Desea tomate?")
+  tom = int(input("1: Si, 2. No: "))
+  if tom == 1:
+    print ("¿Desea cebolla?")
+    c = int(input("1: Si, 2. No: "))
+  elif tom == 2: 
+    print ("¿Desea cebolla?")
+    c = int(input("1: Si, 2. No: "))
+    
+  print ("¿Desea mayonesa?")
+  m = int(input("1: Si, 2. No: "))
+  if m == 1:
+    print ("¿Desea ketchup?")
+    k = int(input("1: Si, 2. No: "))
+  elif m == 2: 
+    print ("¿Desea ketchup?")
+    k = int(input("1: Si, 2. No: "))
+  else: 
+     print ("Por favor, sólo ingresar 1 o 2")
+  
+  print ("¿Desea mostaza?")
+  mo = int(input("1: Si, 2. No: "))
+#Preguntamos por los opcionales, es decir los acompañamientos y las bebidas
+  print ("¿Desea acompañamientos?")
+  ac = str(input("Si, No: "))
+  if ac == "si":
+    a1 = str(input("1: Papas Fritas, 2. Aros de cebolla: "))
+  else: 
+    print ("Por favor, sólo ingresar 1 o 2")
+
+  print ("¿Desea bebida?")
+  b = str(input("Si, No: "))
+  if b == "si":
+    be = str(input("1. Coca Cola, 2. Sprite, 3. Pepsi, 4. 7up: "))
+    print ("Orden registrada")
+  else:
+    print ("Orden registrada")
+#Preguntamos si queremos generar otra orden, si es un si, el programa seguirá, si es un cierre, el programa pedirá un nombre de usuario de la persona que genero las ordenes y el programa se termina
+  print ("¿Tomará otra orden?")
+  s1 = str(input("si, cierre: "))
+  if s1 == "si" :
+    print ("Emocionante")
+  elif s1 == "cierre":
+     ll = str(input("Ingrese su usuario: "))
+  print ("El usuario que tomó las ordenes fue: ",ll)
+#Contamos cuantas ordenes tienen o no tienen los mismos ingredientes
+  sintor = 1
+while sintor < t+1:
+  print (sintor)
+  sintor2 = 1
+while sintor2 < t2+1:
+  print (sintor2)
+  sinto = 1
+while sinto < to+1:
+  print (sinto)
+  sinle = 1
+while sinle < l+1:
+  print (sinle)
+  sintom = 1
+while sintom < tom+1:
+  print (sintom)
+  since = 1
+while since < c+1:
+  print (since)
+  sinma = 1
+while sinma < m+1:
+  print (sinma)
+  sinke = 1
+while sinke < k+1:
+  print (sinke)
+  sinmo = 1
+while sinmo < mo+1:
+  print (sinmo)
+contor = 1
+while contor < t+1:
+  print (contor)
+contor2 = 1
+while contor2 < t2+1:
+  print (contor2)
+conto = 1
+while conto < to+1:
+  print (conto)
+conle = 1
+while conle < l+1:
+  print (conle)
+contom = 1
+while contom < tom+1:
+  print (contom)
+conce = 1
+while conce < c+1:
+  print (conce)
+conma = 1
+while conma < m+1:
+  print (conma)
+conke = 1
+while conke < k+1:
+  print (conke)
+conmo = 1
+while conmo < mo+1:
+  print (conmo) 
+ #Nuestra lista de ingredientes
+  orden = [t, t2, to, l, tom, c, m, k, mo, ac, a1, b, be]
+
+  
